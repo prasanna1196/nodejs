@@ -1,12 +1,13 @@
 // Sending html files in response to URL request
 // Redirecting URL and adding status codes
-
+// without using express
 
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash')
 
 const server = http.createServer((req, res) => {
-    console.log('request made');
+    
 
     // set header content type
     res.setHeader('content-type', 'text/html');
